@@ -11,9 +11,17 @@ var config = require('./config')
 // get auth connection keys
 var T = new Twit(config);
 
-T.get('search/tweets', { q: '@iamfredrickoffi', count: 100 }, function(err, data, response) {
-  console.log(data)
+T.get('search/tweets', { q: 'Esutboy', count: 3 }, function(err, data, response) {
+
+  var tweet = data.statuses;
+
+  for (var index = 0; index < tweet.length; index++) {
+    console.log(tweet[index].text);
+    
+  }
+  // console.log(data)
 })
+
 
 
 //console.log(T)
