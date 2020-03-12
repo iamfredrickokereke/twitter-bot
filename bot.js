@@ -23,6 +23,16 @@ T.get('search/tweets', { q: 'Esutboy', count: 3 }, function(err, data, response)
 })
 
 
+T.post('statuses/update', { status : 'Hey @iamfredrickoffi, my first bot is live.'}, callback)
+
+function callback(error, data, response) {
+  if (error) {
+    console.log("Something went wrong!")
+  } else {
+    console.log("it worked.")
+  }
+}
+
 
 //console.log(T)
 
