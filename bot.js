@@ -20,6 +20,7 @@ T.get('search/tweets', { q: 'Esutboy', count: 3 }, function(err, data, response)
   // console.log(data)
 })
 
+//posting
 
 T.post('statuses/update', { status : 'Hey @iamfredrickoffi, my first bot is live.'}, callback)
 
