@@ -9,7 +9,7 @@ var config = require('./config');
 // get auth connection keys
 var T = new Twit(config);
 
-T.get('search/tweets', { q: 'Esutboy', count: 3 }, function(err, data, response) {
+T.get('search/tweets', { q: 'Avid learner', count: 3 }, function(err, data, response) {
 
   var tweet = data.statuses;
 
